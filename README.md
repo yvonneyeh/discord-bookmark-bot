@@ -9,9 +9,11 @@ Log in to Discord on your browser and visit the [Discord Developer Portal](https
 In your terminal, install the Discord.js module and its dependencies. Use npm in the command prompt to install the module:
 
 Optional: Create and activate a virtual environment:
-`pip3 install virtualenv
+```
+pip3 install virtualenv
 virtualenv env
-source env/bin/activate`
+source env/bin/activate
+```
 
 Install dependencies:
 ```javascript
@@ -19,11 +21,16 @@ npm install discord.js
 ```
 
 Create environmental variables to hold your API key:
+
 _secrets.sh_
-`export DISCORD_TOKEN="{DISCORD_TOKEN}"`
+```
+export DISCORD_TOKEN="{DISCORD_TOKEN}"
+```
 
 Run the code from the terminal:
-`node discord.js`
+```
+node discord.js
+```
 
 
 ## Usage
