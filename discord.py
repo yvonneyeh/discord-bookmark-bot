@@ -17,9 +17,18 @@ async def on_message(message):
 
 @client.event
 async def on_message(message):
+# client = discord.Client()
+
     id = message.channel.client.user.id
+
+    if message.author == client.user:
+        return
+
+    if message.content.startswith('$hello'):
+        await message.channel.send('Hello!')
+# if (message.mentions.users.some(user => user.id === id))
     if message.mentions.users.some(user.id == id):
-        message.channel.send:
+        message.channel.send:a
             "--- global-bookmarks helper ---",
             "Make *#bookmarks* channel first, then you can bookmark and unbookmark any messages with emoji actions.",
             "* React any messages with :bookmark: to create bookmark in the #bookmarks channel!",
