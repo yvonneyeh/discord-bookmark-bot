@@ -34,8 +34,8 @@ client.on("message", (message) => {
             "=== BOOKMARK HELPER ===",
             "Create a **#bookmarks** channel first,",
             "then you can bookmark and unbookmark any messages with emoji actions:",
-            "• React any message with :bookmark: to save it in the #bookmarks channel!",
-            "• React to a saved post in the #bookmarks channel with :x: to delete it.",
+            ":bookmark: React any message with the bookmark emoji to save it in the #bookmarks channel!",
+            ":x: React to a saved post in the #bookmarks channel with the X emoji to delete it.",
         ].join("\n"));
     }
 });
