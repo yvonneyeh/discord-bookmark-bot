@@ -31,10 +31,10 @@ client.on("message", (message) => {
     const id = message.channel.client.user.id;
     if (message.mentions.users.some(user => user.id === id)) {
         message.channel.send([
-            "=== BOOKMARK HELPER ===",
-            "Create a **#bookmarks** channel first,",
+            "===== BOOKMARK HELPER =====",
+            "Create a **#bookmarks** channel first, if one does not already exist,",
             "then you can bookmark and unbookmark any messages with emoji actions:",
-            ":bookmark: React any message with the bookmark emoji to save it in the #bookmarks channel!",
+            ":bookmark: React to any message with the bookmark emoji to save it in the #bookmarks channel!",
             ":x: React to a saved post in the #bookmarks channel with the X emoji to delete it.",
         ].join("\n"));
     }
@@ -59,7 +59,7 @@ client.on("messageReactionAdd", async (messageReaction) => {
                 },
             );
         } else {
-            message.channel.send("#bookmarks channel not found!\nglobal-bookmarks make bookmarks on #bookmarks.\nPlease make #bookmarks channel.");
+            message.channel.send("#bookmarks channel not found!\nPlease create a #bookmarks channel first.");
         }
     } else if (messageReaction.emoji.name === "❌" && message.author.id === message.channel.client.user.id) {
         message.delete();
