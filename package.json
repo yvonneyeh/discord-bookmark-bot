@@ -1,0 +1,13 @@
+{
+    "name": "discord-bookmark-bot",
+    "version": "1.0.0",
+    "description": "A discord bot that provides server global bookmarks",
+    "main": "discord.js",
+    "scripts": {
+      "start": "node discord.js"
+    },
+    "author": "Yvonne Yeh",
+    "dependencies": {
+      "discord.js": "discordjs/discord.js#df1889"
+    }
+  }
